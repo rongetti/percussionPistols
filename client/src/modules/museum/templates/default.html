@@ -1,0 +1,26 @@
+<div class="bckgr-container-light"></div>
+
+<nav-header></nav-header>
+
+<div id="museum-info" ng-controller="Museum.DefaultCtrl">
+    <div class="museum-info-content">
+        <img src="./assets/images/museum-pano.jpg" alt="" style="width: 100%;" />
+        <div class="museum-info-text">
+            <span>{{address}}</span><br>
+            <div class="museum-info-labels">{{tel}}</div><div><a href="tel:+381-11-33-43-441">+381 11 33-43-441</a></div><br>
+            <div class="museum-info-labels">{{fax}}</div><div><a href="tel:+381-11-33-44-915">+381 11 33-44-915</a></div><br>
+            <div class="museum-info-labels">{{email}}</div><div class="text-green"><a href="mailto:vojnimuzej@mod.gov.rs">vojnimuzej@mod.gov.rs</a></div><br>
+            <div class="museum-info-labels">{{site}}</div><div class="text-green"><a href="http://www.muzej.mod.gov.rs" target="_system">www.muzej.mod.gov.rs</a></div><br>
+            <br>
+            <span class="text-green">{{working}}</span><br>
+            <span ng-bind-html="hours"></span><br>
+            <br>
+            <span class="text-green">{{prices}}</span><br>
+            <div class="museum-ticket-labels">{{adults}}</div><div>150 rsd</div><br>
+            <div class="museum-ticket-labels">{{adultgroup}}</div><div>120 rsd</div><br>
+            <div class="museum-ticket-labels">{{children}}</div><div>70 rsd</div><br>
+            <div class="museum-ticket-labels">{{childrengroup}}</div><div>50 rsd</div><br>
+            <span>{{entryinfo}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="bckgr-container"></div>
+
+<div id="menu" ng-controller="Menu.DefaultCtrl">
+    <div class="menu-container">
+        <div id="menu-objects" class="menu-item" ui-sref="objects.menu" style="top: 0; left: 0;">
+            <div class="menu-image"></div>
+            <div class="menu-label">{{objects}}</div>
+        </div>
+        <div id="menu-qr" class="menu-item" ui-sref="scan" style="top: 0; left: 150px;">
+            <div class="menu-image"></div>
+            <div class="menu-label">{{QR}}</div>
+        </div>
+        <div id="menu-location" class="menu-item" ui-sref="location" style="top: 150px; left: 0;">
+            <div class="menu-image"></div>
+            <div class="menu-label">{{location}}</div>
+        </div>
+        <div id="menu-museum" class="menu-item" ui-sref="museum" style="top: 150px; left: 150px;">
+            <div class="menu-image"></div>
+            <div class="menu-label">{{museum}}</div>
+        </div>
+    </div>
+</div>

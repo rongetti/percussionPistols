@@ -1,0 +1,21 @@
+<div class="bckgr-container-light"></div>
+
+<nav-header></nav-header>
+
+<div id="museum-info" ng-controller="Location.DefaultCtrl">
+    <div class="location-content">
+        <div class="map-placeholder"></div>
+        <div class="map-container">
+            <ui-gmap-google-map center="map.center" zoom="map.zoom">
+                <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id"></ui-gmap-marker>
+            </ui-gmap-google-map>
+        </div>
+        <div class="museum-info-text">
+            <span ng-bind-html="locationinfo"></span><br>
+            <br>
+            <span class="text-green">{{transport}}</span><br>
+            <br>
+            <span ng-bind-html="transportinfo"></span>
+        </div>
+    </div>
+</div>

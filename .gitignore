@@ -1,0 +1,9 @@
+node_modules/
+bower_components/
+.idea
+client/platforms/
+client/plugins/
+client/www
+client/www/*
+client/www/**/*
+client/www/index.html

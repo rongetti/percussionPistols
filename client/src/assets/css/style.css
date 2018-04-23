@@ -1,0 +1,703 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: BookAntiqua;
+    src: url(../fonts/BKANT.TTF);
+}
+
+@font-face {
+    font-family: ArnoPro;
+    src: url(../fonts/ARNOPRO-REGULAR.OTF);
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color: #2e2e2e;
+    background-attachment: fixed;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:active {
+    background-color: #cccccc;
+}
+
+/* language */
+#language-select {
+    background-image: url(../images/splashBckgr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.language-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 100%;
+    margin: 0 auto;
+    height: 140px;
+}
+
+.language-item {
+    width: 50%;
+    height: 67px;
+    float: left;
+}
+
+.language-item:active {
+    background-color: #cccccc;
+}
+
+.language-txt {
+    font-family: BookAntiqua;
+    height: 67px;
+    width: 100%;
+    line-height: 67px;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    color: #009688;
+}
+
+.language-flag {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 101px;
+    margin: 0 auto;
+}
+
+#language-srb .language-flag {
+    background-image: url(../images/flag-srb.png);
+}
+
+#language-eng .language-flag {
+    background-image: url(../images/flag-eng.png);
+}
+
+/* splash */
+#splash {
+    background-image: url(../images/splashBckgr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.splash-middle {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 100%;
+    height: 70%;
+}
+
+.splash-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    background-color: #2e2e2e;
+}
+
+.splash-footer-content {
+    position: relative;
+    margin: 0 auto;
+    width: 277px;
+    height: 100%;
+}
+
+.splash-footer-logo {
+    background: url(../images/logo-museum.png) no-repeat;
+    width: 57px;
+    height: 77px;
+    float: left;
+}
+
+.splash-footer-txt {
+    font-family: BookAntiqua;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    padding-top: 16px;
+    width: 110px;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* menu */
+.bckgr-container {
+    background-image: url(../images/mainBckgr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2e2e2e;
+    background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.bckgr-container-light {
+    background-image: url(../images/mainBckgrSmall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 241px;
+    margin: 0 auto;
+    height: 247px;
+}
+
+.menu-item {
+    position: absolute;
+    width: 91px;
+    height: 97px;
+}
+
+.menu-item:active {
+    background-color: #555555;
+}
+
+.menu-image {
+    background-repeat: no-repeat;
+    width: 91px;
+    height: 80px;
+}
+
+#menu-objects .menu-image {
+    background-image: url(../images/object.png);
+}
+
+#menu-qr .menu-image {
+    background-image: url(../images/qr-code.png);
+}
+
+#menu-location .menu-image {
+    background-image: url(../images/location.png);
+}
+
+#menu-museum .menu-image {
+    background-image: url(../images/museum.png);
+}
+
+.menu-label {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    width: 127px;
+    height: 17px;
+    margin-left: -18px;
+    color: #ffffff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 51px;
+    background-color: #2e2e2e;
+    border-bottom: 1px solid #009688;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    z-index: 99;
+}
+
+.back-btn {
+    background: url(../images/backBtn.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    margin-left: 8px;
+}
+
+.back-btn:active {
+    background-color: #555555;
+}
+
+.home-btn {
+    background: url(../images/homeBtn.png) no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
+}
+
+.home-btn:active {
+    background-color: #555555;
+}
+
+/* museum */
+#museum-info {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.museum-info-content {
+    position: absolute;
+    top: 51px;
+    width: 100%;
+}
+
+.museum-info-text {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: #2e2e2e;
+    margin-top: 10px;
+    padding: 0 15px 10px;
+    width: 100%;
+}
+
+.museum-info-text > div {
+    float: left;
+}
+
+
+.museum-info-labels {
+    width: 80px;
+}
+
+.museum-ticket-labels {
+    width: 165px;
+}
+
+.text-green {
+    color: #009688;
+}
+
+/* location */
+#location {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.location-content {
+    position: absolute;
+    top: 51px;
+    width: 100%;
+}
+
+.map-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 207px;
+}
+
+.map-placeholder {
+    background: url(../images/mapPlaceholder.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 207px;
+    position: relative;
+}
+
+.angular-google-map-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 207px;
+    width: 100%;
+}
+
+.angular-google-map{
+    height: 207px;
+    width: 100%;
+}
+
+/* scan */
+#scan {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#scan-btn {
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    width: 241px;
+    height: 241px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+#scan-btn:active {
+    background-color: #555555;
+}
+
+.scan-image {
+    background: url(../images/qr-scan.png) no-repeat;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.scan-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* objects */
+#objects {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#objects-view {
+    height: 100%;
+    width: 100%;
+}
+
+.obj-slider-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 100%;
+}
+
+#objects-slider.slider {
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+}
+
+#objects-slider .slick-slide {
+    /*    background-color: red;
+        color: yellow;*/
+    width: 260px;
+    height: 271px;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+
+.obj-slide-image {
+    margin: 0 10px;
+    width: 241px;
+    height: 241px;
+    background-repeat: no-repeat;
+}
+
+.obj-slide-image:active {
+    /*background-color: #555555;*/
+}
+
+.obj-slide-text {
+    font-family: Roboto;
+    font-size: 19px;
+    line-height: 21px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 21px;
+    white-space: nowrap;
+}
+
+#objects-convert-btn {
+    background-image: url(../images/convert.png);
+}
+
+#objects-percuss-btn {
+    background-image: url(../images/percuss.png);
+}
+
+#objects-militar-btn {
+    background-image: url(../images/militar.png);
+}
+
+#objects-revolv-btn {
+    background-image: url(../images/revolv.png);
+}
+
+.arrow-left {
+    background: url(../images/arrowLeft.png) no-repeat;
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    top: 43%;
+}
+
+.arrow-right {
+    background: url(../images/arrowRight.png) no-repeat;
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    right: 10px;
+    top: 43%;
+}
+
+.slick-arrow:active {
+    background-color: #555555;
+}
+
+.slick-arrow.slick-disabled {
+    /*display: none !important;*/
+    opacity: 0.2;
+}
+
+.slick-arrow.slick-disabled:active {
+    background-color: transparent;
+}
+
+.slick-dots li:active {
+    background-color: #555555;
+}
+
+.object-list-content {
+    position: absolute;
+    top: 51px;
+    height: 100%;
+    width: 100%;
+}
+
+.objects-list-title {
+    float: left;
+    width: 100%;
+    margin-top: 16px;
+    font-family: Roboto;
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.objects-list-desc {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 15px;
+    padding-bottom: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: #ffffff;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.objects-list-item {
+    float: left;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.objects-list-item:active {
+    background-color: #555555;
+}
+
+.objects-list-item-content {
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 1px solid #aaaaaa;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 56px;
+    height: 60px;
+    text-align: left;
+    color: #ffffff;
+    /*    display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;*/
+}
+
+.objects-list-item-content span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.last .objects-list-item-content{
+    border-bottom: none;
+}
+
+.objects-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.objects-data {
+    margin-top: 66px;
+    padding: 0 15px;
+    float: left;
+    width: 100%;
+    /*height: 140px;*/
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: #ffffff;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 15px;
+}
+.objects-image-small {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 133px;
+    height: 133px;
+    border-radius: 10px;
+}
+.zoom-in {
+    background: url(../images/zoom-in.png) no-repeat;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 100px;
+    left: 98px;
+}
+.objects-facts {
+    width: 100%;
+    /*    height: 100px;*/
+}
+.objects-facts > div {
+    padding-left: 170px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 144px 1px;
+    background-size: 20px 20px;
+    margin-bottom: 6px;
+}
+.objects-facts > .objects-title {
+    font-size: 17px;
+    margin-bottom: 11px;
+    padding-left: 145px;
+}
+
+.objects-location {
+    background-image: url(../images/place.png);
+}
+
+.objects-date {
+    background-image: url(../images/date.png);
+}
+
+.objects-maker {
+    background-image: url(../images/manuf.png);
+}
+
+.objects-number {
+    background-image: url(../images/inv-no.png);
+}
+
+.objects-desc {
+    margin-top: 10px;
+    padding: 0 15px 10px;
+    float: left;
+    width: 100%;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#zoom-img-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #2e2e2e;
+    z-index: 100;
+}
+
+.zoomed-image {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.zoom-out {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    background: url(../images/zoom-out.png) no-repeat;
+}
+
+.zoom-out:active {
+    background-color: #cccccc;
+}

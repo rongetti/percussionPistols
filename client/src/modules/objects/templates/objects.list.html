@@ -1,0 +1,14 @@
+<div class="objects-list" ng-controller="Objects.ListCtrl">
+    <div class="object-list-content">
+
+        <div class="objects-list-title">{{title}}</div>
+        <div class="objects-list-desc" ng-bind-html="desc"></div>
+
+        <div ng-repeat="item in items" ui-sref="objects.details({category: category, item: $index + 1})" class="objects-list-item" ng-class="{last: $last}">
+            <div class="objects-list-item-content" style="background-image: url('./assets/images/thumbs/{{item.thumb}}');">
+                <span>{{item.name}}</span>
+            </div>
+        </div>
+
+    </div>
+</div>

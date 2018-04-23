@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="tokioster.percussion" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Percussion Pistols</name>
+    <description>
+        Percussion Pistols and Revolvers
+    </description>
+    <author email="gizarovski@gmail.com" href="mailto:gizarovski@gmail.com">
+        gizarovski@gmail.com
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-cszbar" spec="^1.3.4" />
+    <plugin name="cordova-plugin-compat" spec="^1.2.0" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="ldpi" src="www/assets/icons/ldpi.png" />
+        <icon density="mdpi" src="www/assets/icons/mdpi.png" />
+        <icon density="hdpi" src="www/assets/icons/hdpi.png" />
+        <icon density="xhdpi" src="www/assets/icons/xhdpi.png" />
+        <icon density="xxhdpi" src="www/assets/icons/xxhdpi.png" />
+        <icon density="xxxhdpi" src="www/assets/icons/xxxhdpi.png" />
+    </platform>
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <engine name="android" spec="^7.0.0" />
+</widget>

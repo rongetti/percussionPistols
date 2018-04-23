@@ -1,0 +1,22 @@
+<div class="objects-content" ng-controller="Objects.DetailsCtrl">
+
+    <div class="objects-data" ng-show="!showImage">
+        <div class="objects-image-small" ng-click="zoomIn()" style="background-image: url('./assets/images/small/{{imgSmall}}');">
+            <div class="zoom-in"></div>
+        </div>
+        <div class="objects-facts">
+            <div class="objects-title">{{title}}</div>
+            <div class="objects-location">{{location}}</div>
+            <div class="objects-date">{{date}}</div>
+            <div class="objects-maker">{{maker}}</div>
+            <div class="objects-number">{{number}}</div>
+        </div>
+    </div>
+    <div class="objects-desc" ng-bind-html="desc" ng-show="!showImage"></div>
+
+    <div id="zoom-img-container" ng-show="showImage">
+        <img class="zoomed-image" src="./assets/images/full/{{imgLarge}}" alt="" />
+        <div class="zoom-out" ng-click="zoomOut()"></div>
+    </div>
+
+</div>
