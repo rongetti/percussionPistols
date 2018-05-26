@@ -1,3 +1,9 @@
+App preview:
+http://percussion.gizarovski.com/
+
+Dowload:
+https://play.google.com/store/apps/details?id=tokioster.percussion
+
 Install Cordova:
 
 ```
